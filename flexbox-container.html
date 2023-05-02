@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Flaxbox | Flexible Box Layout</title>
+     <meta charset="utf-8"/>
+     <!-- normalize css -->
+	 <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	 
+	 <style type="text/css">
+	 
+	 	#conteudo {
+	 		background: #dcdcdc;
+	 		height: 600px;
+	 		display: flex;
+	 		
+	 		/*row|row-reverse
+	 		column|column-reverse*/
+	 		flex-direction: row;
+	 		
+	 		/*|nowrap: não quebra os itens
+	 		  |wrap: quebra os itens
+	 		  |wrap-reverse: */
+	 		flex-wrap: nowrap;
+	 		
+	 		/*|flex-start:
+	 		  |flex-end:
+	 		  |center:
+	 		  |space-between:
+	 		  |space-around:
+	 		  */
+	 		justify-content: space-around;
+	 		
+	 		/*|stretch: opção padão - esticado
+	 		  |center: centralizados
+	 		  |flex-start: itens colados parte superior
+	 		  |flex-end: itens colados parte inferior
+	 		  |baseline: utiliza linha base texto - linha superior - 
+	 		             para fazer o alinhamento do texto*/
+	 		align-items: baseline ;
+	 	}
+	 	
+	 	
+	 	.item {
+	 		/*width: 100px;
+	 		height: 100px;*/
+	 		margin: 10px;
+	 		background: #fff;
+	 		border: 1px solid gray;
+	 	}
+	 	
+	 	
+	 </style>
+	 
+ </head>
+ <body>
+ 	<h1>Flexbox</h1>
+	<div id="conteudo">
+		<div class="item" style="padding-top: 60px;">01</div>
+		<div class="item">02</div>
+		<div class="item">03</div>
+		<div class="item">04</div>
+		<div class="item">05 <br> mais cinteúdo </div>
+	</div>
+	
+ </body>
+</html>
+
+
+
